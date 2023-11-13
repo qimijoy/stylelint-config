@@ -4,8 +4,8 @@ A package with Stylelint configurations. The goal is to unify Stylelint configur
 ## Usage
 1. Install packages via npm:
 ```
-npm i -D @qimijoy/stylelint-config stylelint-prettier stylelint-declaration-block-no-ignored-properties 
-stylelint-order stylelint-no-unsupported-browser-features,
+npm i -D @qimijoy/stylelint-config stylelint-config-standard-vue stylelint-prettier 
+stylelint-declaration-block-no-ignored-properties stylelint-order stylelint-no-unsupported-browser-features postcss-html postcss-less
 ```
 
 2. Add the required configuration in Stylelint configuration file in your project:
