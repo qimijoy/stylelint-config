@@ -1,0 +1,14 @@
+{
+  "name": "@qimijoy/stylelint-config",
+  "version": "1.0.0",
+  "description": "My personal Stylelint configurations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qimijoy/stylelint-config.git"
+  },
+  "author": "qimijoy",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
