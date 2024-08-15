@@ -1,6 +1,6 @@
 {
   "name": "@qimijoy/stylelint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "My personal Stylelint configurations",
   "type": "module",
   "repository": {
