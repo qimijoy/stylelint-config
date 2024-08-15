@@ -1,28 +1,2 @@
-dist/*
-
-# NodeJS
-*/node_modules/*
 node_modules
-temp
-**/npm-debug.log
-
-# Docker
-.env
-
-# JetBrains
-.idea
-
-# VisualStudioCode
-.vscode
-.vscode/*
-*/.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# Thumbnails
-._*
-
-# MacOS
-.DS_Store
+dist

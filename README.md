@@ -4,16 +4,21 @@ A package with Stylelint configurations. The goal is to unify Stylelint configur
 ## Usage
 1. Install packages via npm:
 ```
-npm i -D @qimijoy/stylelint-config stylelint-config-standard-vue stylelint-prettier 
-stylelint-declaration-block-no-ignored-properties stylelint-order stylelint-no-unsupported-browser-features postcss-html postcss-less
+npm i -D @qimijoy/stylelint-config stylelint stylelint-config-standard stylelint-config-standard-less stylelint-config-standard-scss stylelint-config-standard-vue stylelint-prettier stylelint-declaration-block-no-ignored-properties stylelint-order stylelint-no-unsupported-browser-features postcss-html postcss-less
 ```
 
 2. Add the required configuration in Stylelint configuration file in your project:
 ```
-const primaryRules = require('@qimijoy/stylelint-config/configs/primary');
+import primaryRules from '@qimijoy/stylelint-config/configs/primary.js';
 
-module.exports = {
+export default {
 	ignoreFiles: ['**/node_modules/**', '**/dist/**'],
+
+	extends: [
+		'stylelint-config-standard',
+		'stylelint-config-standard-less',
+		'stylelint-config-standard-scss'
+	],
 
 	plugins: [
 		'stylelint-prettier',
@@ -52,4 +57,4 @@ module.exports = {
 ```
 
 ## Adding new configurations
-Put the configurations in the configs folder
+Put the configurations in the configs folder. Each configuration is an ES-module that exports an object.

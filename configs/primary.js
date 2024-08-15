@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	rules: {
 		// Stylelint Original Rules
 		'no-descending-specificity': true,
